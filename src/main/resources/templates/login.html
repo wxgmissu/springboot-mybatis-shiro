@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆页面</title>
+</head>
+<body>
+    <span>请登录</span><br/>
+    <h3 style="color: red" th:text="${msg}"></h3>
+    <form method="post" action="login">
+        <input type="text" name="name"/><br/>
+        <input type="password" name="password"/><br/>
+        <input type="submit" value="登陆"/>
+    </form>
+
+</body>
+</html>
